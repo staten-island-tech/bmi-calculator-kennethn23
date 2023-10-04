@@ -53,15 +53,34 @@ calc(); */
 const userHeight = 0
 const userWeight = 0 */
 
-function bmiCalculator(userHeight, userWeight) {
+function bmiCalculator() {
+    // BMI Calculator
     return ((userWeight / (userHeight * userHeight)) * 10000);
 }
 
-let userHeight = Number(prompt("Enter a height, in Centimeters"));
-let userWeight = Number(prompt("Enter a weight, in Kilograms"));
-const bmi = bmiCalculator(userHeight, userWeight);
-// console.log(bmi);
+ let userHeight = Number(prompt("Enter your height, in cm"));
+let userWeight = Number(prompt("Enter your weight, in kg"));
+const bmi = bmiCalculator();
 
 const bmiDisplay = document.getElementById('bmi-display');
-const newContent = "Your BMI is: " + bmi;
-bmiDisplay.innerHTML = newContent;
+const newBMI = "Your BMI is: " + bmi;
+bmiDisplay.innerHTML = newBMI; 
+
+
+/* // BMI Range
+    if (bmi < 18.5){
+        const rangeDisplay = document.getElementById('bmi-ranges');
+        const underweight = "You are UNDERWEIGHT";
+        rangeDisplay.innerHTML = underweight;
+    } else if (bmi < 25){
+        const rangeDisplay = document.getElementById('bmi-ranges');
+        const healthy = "You are HEALTHY";
+        rangeDisplay.innerHTML = healthy;
+    } else if (bmi < 30){
+        const rangeDisplay = document.getElementById('bmi-ranges');
+        const overweight = "You are OVERWEIGHT";
+        rangeDisplay.innerHTML = overweight;
+    } else {
+        const rangeDisplay = document
+    }
+    */
