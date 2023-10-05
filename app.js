@@ -14,9 +14,13 @@ function bmiRange(userHeight, userWeight) {
     }
 }
 
+let userName = prompt("Enter your name");
 let userHeight = Number(prompt("Enter your height, in cm"));
 let userWeight = Number(prompt("Enter your weight, in kg"));
+
 const bmi = bmiCalculator(userHeight, userWeight);
 const range = bmiRange(userHeight, userWeight);
+
+console.log("Name: " + userName);
 console.log("Your BMI is " + bmi);
 console.log("You are " + range);
