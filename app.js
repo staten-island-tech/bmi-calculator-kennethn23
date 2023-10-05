@@ -2,7 +2,7 @@ function bmiCalculator(userHeight, userWeight) {
     return ((userWeight / (userHeight * userHeight)) * 10000);
 }
 
-function bmiRange(userHeight, userWeight) {
+function bmiRange() {
     if (bmi < 18.5){
         return ("UNDERWEIGHT");
     } else if (bmi < 25){
