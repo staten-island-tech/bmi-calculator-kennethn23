@@ -2,12 +2,12 @@ function bmiCalculator(userHeight, userWeight) {
     return ((userWeight / (userHeight * userHeight)) * 10000);
 }
 
-function bmiRange(bmiCalculator) {
-    if (bmiCalculator < 18.5){
+function bmiRange(bmi) {
+    if (bmi < 18.5){
         return ("UNDERWEIGHT");
-    } else if (bmiCalculator < 25){
+    } else if (bmi >= 18.5 && bmi < 25){
         return ("HEALTHY");
-    } else if (bmiCalculator < 30){
+    } else if (bmi >= 25 && bmi < 30){
         return ("OVERWEIGHT");
     } else {
         return ("OBESE");
